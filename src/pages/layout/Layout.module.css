@@ -1,0 +1,23 @@
+.Layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.outlet {
+  width: 100%;
+  background-color: hsla(216, 57%, 91%, 1);
+}
+
+@media (max-width: 768px) {
+  .Layout {
+    flex-direction: column;
+    width: 100%;
+  }
+  .responsiveOutlet {
+    display: none;
+  }
+  .outlet {
+    height: 100%;
+  }
+}

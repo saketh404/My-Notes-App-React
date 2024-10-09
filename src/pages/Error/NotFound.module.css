@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+.container h1,
+h4 {
+  margin: 0;
+  padding: 1em;
+}
+
+.back {
+  background-color: hsl(249, 100%, 27%);
+  width: 10%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back a {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .back {
+    width: 30%;
+    height: 5%;
+  }
+}

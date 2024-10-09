@@ -1,0 +1,188 @@
+.container {
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: end; */
+  /* height: 35%; */
+  width: 40%;
+  aspect-ratio: 16/9;
+}
+
+.container h4 {
+  margin: 1em;
+  font-size: 20px;
+}
+
+.inputRegion {
+  margin: 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 15%;
+}
+.inputRegion input {
+  border-radius: 1em;
+  width: 70%;
+  height: 100%;
+  padding: 0 20px;
+}
+.inputRegion label {
+  font-weight: 500;
+}
+.overlay {
+  background-color: hsla(0, 0%, 18%, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.colorSelection {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+.colorSelection p {
+  font-weight: 500;
+}
+
+.colorBubbles {
+  width: 10%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-color: hsla(262, 92%, 76%, 1);
+  cursor: pointer;
+  border: none;
+}
+.pink {
+  background-color: hsla(306, 100%, 74%, 1);
+}
+
+.cyan {
+  background-color: hsla(187, 97%, 63%, 1);
+}
+.brown {
+  background-color: hsla(15, 81%, 70%, 1);
+}
+
+.royalBlue {
+  background-color: hsla(223, 100%, 50%, 1);
+}
+
+.lightBlue {
+  background-color: hsla(223, 100%, 70%, 1);
+}
+
+.colorBubbles:hover {
+  border: 2px solid black;
+}
+
+.colorBubbles:focus {
+  border: 2px solid limegreen;
+}
+
+.buttonWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-bottom: 1em;
+}
+
+.buttonWrapper button {
+  width: 25%;
+  aspect-ratio: 2.4/1;
+  border: none;
+  color: white;
+  border-radius: 1em;
+  background-color: hsla(227, 100%, 27%, 1);
+}
+.colorWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 70%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 5px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: end; */
+    height: 40%;
+    width: 80%;
+    /* aspect-ratio: 16/9; */
+  }
+
+  .container h4 {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1em;
+  }
+
+  .colorBubbles {
+    width: 20%;
+  }
+
+  .colorBubbles:focus {
+    width: 25%;
+  }
+
+  .buttonWrapper {
+    justify-content: space-evenly;
+  }
+
+  .buttonWrapper button {
+    width: 25%;
+  }
+  .inputRegion {
+    height: 25%;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .inputRegion input {
+    width: 70%;
+    height: 90%;
+  }
+
+  .colorSelection {
+    flex-direction: column;
+    height: 40%;
+    margin: 0;
+    gap: 0;
+  }
+  .colorWrapper {
+    height: 90%;
+  }
+  .colorSelection p {
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

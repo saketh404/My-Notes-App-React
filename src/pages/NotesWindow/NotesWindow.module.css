@@ -1,0 +1,133 @@
+.head {
+  display: flex;
+  height: 8%;
+  gap: 10px;
+  align-items: center;
+  background-color: hsla(227, 100%, 27%, 1);
+  color: white;
+}
+.head h4 {
+  margin: 0 1em;
+}
+
+.backArrow {
+  display: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container {
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 0%, 0.63);
+  cursor: pointer;
+}
+
+.container::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 10px;
+  /* background-color: hsla(0, 0%, 0%, 0.63); */
+  cursor: pointer;
+}
+
+.container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px inset hsla(0, 0%, 0%, 0.63);
+  -webkit-box-shadow: inset 0 0 6px hsla(0, 0%, 85%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.foot {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(227, 100%, 27%, 1);
+}
+
+.textBlock {
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  border-radius: 10px;
+}
+.textBlock textarea {
+  height: 99%;
+  width: 90%;
+  resize: none;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+}
+
+.textBlock textarea:focus {
+  outline: none;
+}
+
+.textBlock textarea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 85%, 1);
+  cursor: pointer;
+}
+
+.textBlock textarea::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 85%, 1);
+  cursor: pointer;
+}
+
+.textBlock textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 6px hsla(0, 0%, 85%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.send {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: hsla(0, 0%, 67%, 1);
+  cursor: not-allowed;
+}
+.blueSend {
+  color: hsla(227, 100%, 27%, 1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .backArrow {
+    display: block;
+  }
+
+  .container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 84%);
+    -webkit-box-shadow: inset 0 0 6px hsl(0, 0%, 83%);
+    background-color: hsla(0, 0%, 100%, 1);
+  }
+
+  .container::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 85%, 1);
+    cursor: pointer;
+  }
+
+  .textBlock textarea {
+    font-size: 15px;
+  }
+}
